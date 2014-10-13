@@ -1,0 +1,19 @@
+{
+  "name": "Activity-Monitor",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git"
+  },
+  "dependencies": {
+    "express": "^4.4.5",
+    "ws" : "0.4.x",
+    "shelljs" : "0.3.x",
+    "prettyjson" : "1.0.0"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
