@@ -30,8 +30,8 @@ wss.on("connection", function(ws) {
 	shell.exec('adb shell dumpsys activity package ' + packageName, {silent:true}, function(code, output) {
 	  if(code == 0) {
 	    if(previousOutput !== output) {
-		    var startPattern = 'Running activities (most recent first):';
-		    var result = output.substring(output.indexOf(startPattern) + startPattern.length);
+		    // var result = output.substring(output.indexOf(startPattern) + startPattern.length);
+		    var result = output;
 		    var obj = {
 	    		running : {
 	    			description : "Running activities (most recent first):",
